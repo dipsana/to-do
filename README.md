@@ -61,7 +61,7 @@ start index.html
 
 ## 📂 Folder Structure
 
-to-do-list-app/  
+[to-do](/)/  
 ├── [CHANGELOG.md](CHANGELOG.md)  
 ├── [LICENSE](LICENSE)  
 ├── [README.md](README.md)  
