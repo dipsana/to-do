@@ -1,3 +1,4 @@
+console.log("script running...");
 // Add event listeners for buttons
 document.getElementById('add-task-btn').addEventListener('click', addTask);
 document.getElementById('dark-mode-toggle').addEventListener('click', toggleDarkMode);
@@ -44,7 +45,8 @@ function addTask() {
 
     // Append the new task to the task list
     document.getElementById('task-list').appendChild(listItem);
-
+    console.log("updated task-list");
+    
     // Clear the input fields
     taskInput.value = "";
     dueDateInput.value = "";
@@ -52,6 +54,7 @@ function addTask() {
 
 function removeTask(button) {
     const listItem = button.parentElement.parentElement;
+    console.log("removed ", listItem);
     listItem.remove();
 }
 
@@ -59,10 +62,12 @@ function completeTask(button) {
     const listItem = button.parentElement.parentElement;
     // Toggle the completed state on the task
     listItem.classList.toggle('completed');
+    console.log("completed class toggled!");
 }
 
 function toggleDarkMode() {
     document.body.classList.toggle('dark-mode');
+    console.log("dark-mode class toggled!");
 }
 
 function changeBackground() {
